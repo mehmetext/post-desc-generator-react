@@ -1,0 +1,151 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+    max-width: 50%;
+    margin: auto;
+    position: relative;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .readySettings_content,
+    .hashtags {
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+    }
+}
+
+.readySettings {
+    padding: 1rem 0rem 0rem 0rem;
+    background: #efefef;
+}
+
+.readySettings_title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.readySettings_content,
+.hashtags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.readySettingItem,
+.hashtagItem {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background: transparent;
+    padding: 0.4rem 0.6rem;
+    color: #333;
+    border-radius: 30px;
+    flex-shrink: 0;
+    cursor: pointer;
+    user-select: none;
+    border: 3px solid #333;
+    font-weight: bold;
+    transition: 0.25s ease;
+}
+
+.readySettingItem:hover,
+.hashtagItem:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.readySettingItem--selected {
+    background: #333;
+    color: white;
+    border-color: transparent;
+}
+
+.readySettingItem--selected:hover {
+    background: #333;
+}
+
+.readySettingItem:last-child,
+.hashtagItem:last-child {
+    margin-right: 0;
+}
+
+.input_textarea {
+    width: calc(100% - 2rem - 4px);
+    resize: none;
+    border: 2px solid #333;
+    border-radius: 6px;
+    padding: 1rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    outline: 0;
+}
+
+.copy {
+    background: #369369;
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    bottom: 0;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #fff;
+    transition: 0.25s ease background-color;
+}
+
+.copy.copied {
+    background-color: #1a5d3e;
+}
+
+.copied-popup {
+    position: fixed;
+    z-index: 999;
+    background: #333;
+    color: #fff;
+    padding: 16px 30px;
+    border-radius: 6px;
+    user-select: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    bottom: -60px;
+    transition: 0.25s ease bottom;
+}
+
+.copied-popup h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.copied-popup.show {
+    bottom: calc(5rem + 20px);
+}
+
+.copy-small {
+    background-color: #369369;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 0.1rem;
+}
