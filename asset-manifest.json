@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/post-desc-generator-react/static/css/main.389bb2d6.css",
+    "main.js": "/post-desc-generator-react/static/js/main.adbb8949.js",
+    "index.html": "/post-desc-generator-react/index.html",
+    "main.389bb2d6.css.map": "/post-desc-generator-react/static/css/main.389bb2d6.css.map",
+    "main.adbb8949.js.map": "/post-desc-generator-react/static/js/main.adbb8949.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.389bb2d6.css",
+    "static/js/main.adbb8949.js"
+  ]
+}
